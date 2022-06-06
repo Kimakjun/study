@@ -32,7 +32,7 @@ optPerson.flatMap(Person::getCar)   // getCar, getInsurance 모두 optional 를 
          .orElse("Unknown");
 ```
 
-### 도메인 모델에 Optional 사용시 데이터 직렬화할 수 없는 이유
+#### 도메인 모델에 Optional 사용시 데이터 직렬화할 수 없는 이유
 
 Optional 클래스는 필드 형식으로 사용할 것을 가정하지 않았으므로 직렬화 인터페이스를 구현하지 않는다.
 따라서 Optional 사용한다면 직렬화 모델을 사용하는 도구나 프레임워크에 문제가 생길 수 있다. 이와 같은 단점에서
